@@ -4,7 +4,7 @@ agent any
 stages {
 stage('Clone Repo') {
 steps {
-git 'https://github.com/ramyadevi2/pipeline.git'
+git 'https://github.com/ramyadevi2/project1.git'
       }
     }
 stage('Build Docker Image') {
