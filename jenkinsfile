@@ -15,8 +15,8 @@ sh 'docker build -t demo-image .'
 stage('Run Docker Container') {
 steps {
 sh '''
-dockerrm -f demo-container1 || true
-docker run -dit --name demo-container-1a -p 8181:80 demo-image
+docker rm -f demo-container1 || true
+docker run -dit --name demo-cont-ps -p 8181:80 demo-image
         '''
       }
     }
